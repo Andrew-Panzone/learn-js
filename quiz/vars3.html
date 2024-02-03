@@ -1,15 +1,14 @@
 <html>
     <head>
         <script>
-            // Fix all errors in the code below
             const PI = 3.14159;
+            let area; // Declare `area` in an accessible scope
             {
                 let radius = 5;
-                let area = PI * radius * radius;
-                PI = 3.0;
+                area = PI * radius * radius; // Assign value to `area` within the block
+                // Removed the line attempting to reassign `PI`
             }
-            console.log(area);
-
+            console.log(area); // This will now log the calculated area
         </script>
     </head>
     <body>
